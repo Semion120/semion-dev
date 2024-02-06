@@ -1,0 +1,17 @@
+.main-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+  .left-btn {
+    margin-right: 10px;
+  }
+  .right-btn {
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: 893px) {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,85 @@
+$block: '.big-animation';
+
+#{$block} {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 300px;
+
+  &__working-field {
+    background-color: var(--g-color-line-brand);
+    border-radius: 20px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    animation-name: createWorkingField;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+  }
+
+  &__phrase {
+    display: flex;
+  }
+  &__char {
+    display: none;
+    height: fit-content;
+    width: fit-content;
+
+    .space {
+      width: 5px;
+      height: 1px;
+      visibility: hidden;
+    }
+  }
+  &__char_active {
+    height: fit-content;
+    display: block;
+    width: fit-content;
+
+    animation-name: active-char;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  &__char_visible {
+    display: block;
+  }
+
+  @keyframes active-char {
+    from {
+      padding-right: 1px;
+      border-right: 2px solid var(--g-color-scroll-track);
+    }
+    to {
+      padding-right: 1px;
+      border-right: 2px solid #ffffff00;
+    }
+  }
+
+  @keyframes createWorkingField {
+    from {
+      width: 20px;
+      height: 20px;
+      background-color: var(--g-color-scroll-track);
+    }
+    50% {
+      width: 100%;
+      height: 20px;
+    }
+    to {
+      width: 100%;
+      height: 100%;
+      background-color: var(--g-color-line-brand);
+    }
+  }
+}

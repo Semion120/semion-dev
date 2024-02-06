@@ -1,0 +1,86 @@
+$block: '.projects';
+
+#{$block} {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  &__nav-btns {
+    display: flex;
+    width: 100%;
+    max-width: 231px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .list {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 610px;
+    width: 100%;
+    .project-card {
+      width: 100%;
+      max-width: 300px;
+      padding: 20px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      .card-text {
+        h3 {
+          margin: 0;
+        }
+        p {
+          margin-top: 5px;
+        }
+      }
+      .card-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .examples {
+          width: 32%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+    @media screen and (max-width: 632px) {
+      justify-content: center;
+    }
+  }
+}
+
+.yc-modal__content {
+  padding: 20px;
+  margin: 0 !important;
+  box-sizing: border-box;
+  width: 95%;
+  max-width: 600px;
+
+  h1 {
+    margin: 0 0 10px 0;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  p {
+    margin: 0;
+  }
+
+  ul {
+    padding-left: 25px;
+    margin-top: 0;
+  }
+  .view {
+    margin-top: 30px;
+    .view-btns {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
