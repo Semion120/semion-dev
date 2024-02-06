@@ -8,7 +8,7 @@ import '@/app/styles.scss'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Разработка Web-приложений',
+  title: 'Разработка Web-приложений с использованием современных технологий',
   description:
     'Личная страница для связи с разработчиком. Фронтенд, бекенд, настройка сервера',
 }
