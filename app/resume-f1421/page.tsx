@@ -5,6 +5,12 @@ import Image from 'next/image'
 
 import block from 'bem-cn-lite'
 import '@/app/styles.scss'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Резюме Бабак С.П.',
+  description: 'Резюме разработчика с возможностью скачки в pdf формате.',
+}
 
 const b = block('main-page')
 

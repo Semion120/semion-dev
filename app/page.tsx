@@ -5,6 +5,13 @@ import MainButtons from '@/app/components/MainButtons'
 
 import block from 'bem-cn-lite'
 import '@/app/styles.scss'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Разработка Web-приложений',
+  description:
+    'Личная страница для связи с разработчиком. Фронтенд, бекенд, настройка сервера',
+}
 
 const b = block('main-page')
 
