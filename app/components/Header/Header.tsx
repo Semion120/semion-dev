@@ -49,7 +49,7 @@ export default function Header({ isDark, setTheme }: HeaderProps) {
           </Button>
         </div>
         <div className={b('logo')}>
-          <Text variant="header-2">SEMION.DEV</Text>
+          <Text variant="header-2">SEMION.WEB</Text>
         </div>
         <div className={b('navs', { desktop: true })}></div>
         <div className={b('socials', { desktop: true })}>
