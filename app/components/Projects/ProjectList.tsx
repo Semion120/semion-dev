@@ -31,12 +31,18 @@ function Project({ project }: { project: Project }) {
       <div className="card-actions">
         <div className="examples">
           {project.projectLink ? (
-            <Button href={project.projectLink} view="outlined" size="l">
+            <Button
+              href={project.projectLink}
+              target="_blank"
+              view="outlined"
+              size="l"
+            >
               <Icon data={Link} size={20} />
             </Button>
           ) : (
             <Button
               href={project.projectLink}
+              target="_blank"
               view="outlined"
               size="l"
               disabled
@@ -46,7 +52,12 @@ function Project({ project }: { project: Project }) {
           )}
 
           {project.gitLink ? (
-            <Button href={project.gitLink} view="outlined" size="l">
+            <Button
+              href={project.gitLink}
+              target="_blank"
+              view="outlined"
+              size="l"
+            >
               <Icon data={GitHubLogo} size={20} />
             </Button>
           ) : (
@@ -90,6 +101,7 @@ function Project({ project }: { project: Project }) {
               {project.projectLink ? (
                 <Button
                   href={project.projectLink}
+                  target="_blank"
                   view="outlined"
                   size="l"
                   style={{ marginRight: '10px' }}
@@ -116,6 +128,7 @@ function Project({ project }: { project: Project }) {
                   view="outlined"
                   size="l"
                   style={{ marginLeft: '10px' }}
+                  target="_blank"
                 >
                   <Icon data={GitHubLogo} size={25} />
                   <Text>GitHub</Text>
