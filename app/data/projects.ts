@@ -55,9 +55,10 @@ const projects: Project[] = [
     ],
   },
   {
-    name: 'Сайт Semion.dev',
+    name: 'Сайт Semion-web',
     companyActivityType: 'Личный сайт',
     type: 'open-source',
+    projectLink: 'https://semion-web.ru/',
     gitLink: 'https://github.com/Semion120/semion-dev',
     stack: ['React', 'Next.js'],
     specials: ['Сайт для личных целей и проб нового функционала'],
