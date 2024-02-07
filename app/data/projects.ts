@@ -55,7 +55,7 @@ const projects: Project[] = [
     ],
   },
   {
-    name: 'Сайт semion-web',
+    name: 'Сайт semion-web.ru',
     companyActivityType: 'Личный сайт',
     type: 'open-source',
     projectLink: 'https://semion-web.ru/',
