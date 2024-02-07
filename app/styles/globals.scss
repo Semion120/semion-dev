@@ -7,13 +7,13 @@ body,
 }
 .g-root_theme_light-hc,
 .g-root_theme_dark-hc {
-  --g-color-base-brand: #e47979;
-  --g-color-base-brand-hover: #e06666;
-  --g-color-base-selection: #731e1e;
-  --g-color-base-selection-hover: #8f1616;
-  --g-color-line-brand: #e47979;
-  --g-color-text-brand: #eb9c9c;
-  --g-color-text-link: #eb9c9c;
-  --g-color-text-link-hover: #f2bebe;
-  --g-color-text-brand-heavy: white;
+  --g-color-base-brand: #e47979 !important;
+  --g-color-base-brand-hover: #e06666 !important;
+  --g-color-base-selection: #731e1e !important;
+  --g-color-base-selection-hover: #8f1616 !important;
+  --g-color-line-brand: #e47979 !important;
+  --g-color-text-brand: #eb9c9c !important;
+  --g-color-text-link: #eb9c9c !important;
+  --g-color-text-link-hover: #f2bebe !important;
+  --g-color-text-brand-heavy: white !important;
 }
